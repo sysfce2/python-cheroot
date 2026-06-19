@@ -75,7 +75,7 @@ repos:
     name: ruff-format (first pass)
 
 - repo: https://github.com/asottile/add-trailing-comma.git
-  rev: v3.2.0
+  rev: v4.0.0
   hooks:
   - id: add-trailing-comma
 
@@ -87,12 +87,12 @@ repos:
     name: ruff-format (second pass)
 
 - repo: https://github.com/Lucas-C/pre-commit-hooks.git
-  rev: v1.5.5
+  rev: v1.5.6
   hooks:
   - id: remove-tabs
 
 - repo: https://github.com/python-jsonschema/check-jsonschema.git
-  rev: 0.34.0
+  rev: 0.37.1
   hooks:
   - id: check-github-workflows
     files: ^\.github/workflows/[^/]+$
@@ -166,7 +166,7 @@ repos:
   - id: debug-statements
 
 - repo: https://github.com/adrienverge/yamllint.git
-  rev: v1.37.1
+  rev: v1.38.0
   hooks:
   - id: yamllint
     types:
@@ -205,7 +205,7 @@ repos:
   - id: forbid-html-img-without-alt-text
 
 - repo: https://github.com/pre-commit/mirrors-mypy.git
-  rev: v1.18.2
+  rev: v1.20.0
   hooks:
   - id: mypy
     alias: mypy-py314
@@ -283,7 +283,7 @@ repos:
     pass_filenames: false
 
 - repo: https://github.com/pre-commit/mirrors-mypy.git
-  rev: v1.18.2
+  rev: v1.20.0
   hooks:
   - id: mypy
     alias: mypy-stubtest
@@ -317,7 +317,7 @@ repos:
       $
 
 - repo: https://github.com/PyCQA/pylint.git
-  rev: v3.3.9
+  rev: v4.0.5
   hooks:
   - id: pylint
     additional_dependencies:
